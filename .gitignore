@@ -214,3 +214,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#Project files
+
+sample_datasets/api_data_aadhar_biometric/
+sample_datasets/api_data_aadhar_demographic/
+sample_datasets/api_data_aadhar_enrolment/
