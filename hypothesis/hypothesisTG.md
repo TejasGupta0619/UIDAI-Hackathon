@@ -12,17 +12,15 @@ Identify meaningful patterns, trends, anomalies, or predictive indicators and tr
 
 ### Api data aadhar enrolment : Captures Aadhaar enrolment activity.
 
-> Dimensions:
+> Dimensions :
 
-- Date / Month / Year
+- Date / Month / Year - Update period
 
-- State, District, PIN / Region
+- State, District, PIN / Region - The location where the enrolment update took place
 
-- Enrolment type (New / Update)
+- Age group - Enrolments btw age 0-5 , 5-17 , 18+
 
-- Age group
-
-> Core Questions:
+> Core Questions :
 
 - Which regions show enrolment saturation vs growth?
 
@@ -40,7 +38,13 @@ age_18_greater → Adult enrolment (late enrolment / first-time adults)
 
 ### Api data aadhar demographic : Tracks count of Aadhaar demographic update transactions segmented by age, not field-level changes.
 
-> Interpreted Labels:
+> Interpreted Labels :
+
+- Date / Month / Year - Update period
+
+- State, District, PIN / Region - The location where the enrolment update took place
+
+- Age group - Enrolments btw age 5-17 , 17+
 
 ```
 demo_age_5_17 → Number of demographic update requests initiated for residents aged 5–17
@@ -48,7 +52,7 @@ demo_age_5_17 → Number of demographic update requests initiated for residents 
 demo_age_17_ → Number of demographic update requests initiated for residents aged 18 and above
 ```
 
-> Key Indicators:
+> Key Indicators :
 
 - Update frequency per demographic field
 
@@ -56,7 +60,7 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 
 - Address update density (migration proxy)
 
-> Core Questions:
+> Core Questions :
 
 - Which demographic attributes change most frequently?
 
@@ -66,7 +70,15 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 
 ### Api data aadhar biometric : Tracks count of Aadhaar biometric update transactions segmented by age, not biometric modality.
 
-> Key Indicators:
+> Interpreted Labels :
+
+- Date / Month / Year - Update period
+
+- State, District, PIN / Region - The location where the enrolment update took place
+
+- Age group - Enrolments btw age 5-17 , 17+
+
+> Key Indicators :
 
 - Biometric type updated
 
@@ -74,7 +86,7 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 
 - Time since last update
 
-> Core Questions:
+> Core Questions :
 
 - At what age do biometric failures increase?
 
@@ -82,9 +94,17 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 
 - Can biometric decay be predicted?
 
+# Overall Questions
+
+- Which period was the most activity (enrolment , demographic , biometric) ?
+
+- What's the matrix of the activity in various states and landfills (enrolment , demographic , biometric)?
+
+- What's the category of the people who performed the activity? (enrolment , demographic , biometric) ?
+
 # Resources
 
-- [Inside India’s Aadhar: The World’s Largest Biometric System Explained](https://youtu.be/FqriDe2nxlw)
+- [Inside India’s Aadhar : The World’s Largest Biometric System Explained](https://youtu.be/FqriDe2nxlw)
 
 - [Unique Identification Authority Of India](https://uidai.gov.in/en/about-uidai/unique-identification-authority-of-india.html)
 
@@ -96,16 +116,10 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 
 ### API
 
-[Query postal location from pin](https://api.postalpincode.in/pincode/{PIN_NUMBER})
+- [Query postal location from pin](https://api.postalpincode.in/pincode/{PIN_NUMBER})
 
-[Delivery Post office Pincode Boundary](https://www.data.gov.in/catalog/all-india-pincode-boundary-geo-json)
+- [Delivery Post office Pincode Boundary](https://www.data.gov.in/catalog/all-india-pincode-boundary-geo-json)
 
-[Indian Pincodes Database](https://github.com/deep5050/indian-pincodes-database/)
+- [Indian Pincodes Database](https://github.com/deep5050/indian-pincodes-database/)
 
-[Back4App PinCode Database](https://www.back4app.com/database/back4app/india-pin-code-database)
-
-### Advanced Syntax (Extensions)
-
-- **Horizontal Rules**: Use three or more dashes `---`, asterisks `***`, or underscores `___`.
-- **Task Lists**: Use `- [ ]` for incomplete and `- [x]` for complete items.
-- **Footnotes**: Use `[^1]` for the reference and `[^1]: Note text` for the definition.
+- [Back4App PinCode Database](https://www.back4app.com/database/back4app/india-pin-code-database)
