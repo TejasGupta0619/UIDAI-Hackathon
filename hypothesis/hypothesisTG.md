@@ -103,9 +103,3 @@ demo_age_17_ → Number of demographic update requests initiated for residents a
 [Indian Pincodes Database](https://github.com/deep5050/indian-pincodes-database/)
 
 [Back4App PinCode Database](https://www.back4app.com/database/back4app/india-pin-code-database)
-
-### Advanced Syntax (Extensions)
-
-- **Horizontal Rules**: Use three or more dashes `---`, asterisks `***`, or underscores `___`.
-- **Task Lists**: Use `- [ ]` for incomplete and `- [x]` for complete items.
-- **Footnotes**: Use `[^1]` for the reference and `[^1]: Note text` for the definition.
