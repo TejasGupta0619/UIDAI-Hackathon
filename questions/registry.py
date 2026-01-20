@@ -1,5 +1,4 @@
 QUESTION_REGISTRY = {
-
     # ---- DESCRIPTIVE ----
     "growth_states": {
         "type": "descriptive",

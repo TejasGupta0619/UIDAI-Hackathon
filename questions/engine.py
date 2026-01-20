@@ -1,3 +1,5 @@
+from questions.registry import QUESTION_REGISTRY
+
 def answer_question(question_id, df, **params):
     if question_id not in QUESTION_REGISTRY:
         raise ValueError(f"Unknown question: {question_id}")
