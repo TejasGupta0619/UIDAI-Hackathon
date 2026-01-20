@@ -1,4 +1,4 @@
-# UIDAI HACKATHON HYPOTHESIS TG
+# UIDAI HACKATHON HYPOTHESIS
 
 ## Problem Statement : Unlocking Societal Trends in Aadhaar Enrolment and Updates
 
