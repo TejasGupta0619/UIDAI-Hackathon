@@ -1,0 +1,335 @@
+[
+  {
+    "state": "ANDAMAN AND NICOBAR ISLANDS",
+    "total_enrolment": 511.0,
+    "total_demographic_updates": 7246.0,
+    "total_biometric_updates": 20698,
+    "maintenance_load": 27944.0,
+    "maintenance_to_expansion_ratio": 54.578125,
+    "cluster": 2
+  },
+  {
+    "state": "ANDHRA PRADESH",
+    "total_enrolment": 110519.0,
+    "total_demographic_updates": 2046079.0,
+    "total_biometric_updates": 3270883,
+    "maintenance_load": 5316962.0,
+    "maintenance_to_expansion_ratio": 48.10859572927977,
+    "cluster": 2
+  },
+  {
+    "state": "ARUNACHAL PRADESH",
+    "total_enrolment": 4273.0,
+    "total_demographic_updates": 35082.0,
+    "total_biometric_updates": 71146,
+    "maintenance_load": 106228.0,
+    "maintenance_to_expansion_ratio": 24.854468881609733,
+    "cluster": 3
+  },
+  {
+    "state": "ASSAM",
+    "total_enrolment": 229458.0,
+    "total_demographic_updates": 1008424.0,
+    "total_biometric_updates": 977506,
+    "maintenance_load": 1985930.0,
+    "maintenance_to_expansion_ratio": 8.65483594018975,
+    "cluster": 0
+  },
+  {
+    "state": "BIHAR",
+    "total_enrolment": 600681.0,
+    "total_demographic_updates": 4725820.0,
+    "total_biometric_updates": 4799829,
+    "maintenance_load": 9525649.0,
+    "maintenance_to_expansion_ratio": 15.858056342623884,
+    "cluster": 1
+  },
+  {
+    "state": "CHANDIGARH",
+    "total_enrolment": 2681.0,
+    "total_demographic_updates": 82538.0,
+    "total_biometric_updates": 72199,
+    "maintenance_load": 154737.0,
+    "maintenance_to_expansion_ratio": 57.69463087248322,
+    "cluster": 2
+  },
+  {
+    "state": "CHHATTISGARH",
+    "total_enrolment": 101428.0,
+    "total_demographic_updates": 1984364.0,
+    "total_biometric_updates": 2599731,
+    "maintenance_load": 4584095.0,
+    "maintenance_to_expansion_ratio": 45.195111851640064,
+    "cluster": 2
+  },
+  {
+    "state": "DELHI",
+    "total_enrolment": 94529.0,
+    "total_demographic_updates": 1438934.0,
+    "total_biometric_updates": 1304362,
+    "maintenance_load": 2743296.0,
+    "maintenance_to_expansion_ratio": 29.020374484290702,
+    "cluster": 3
+  },
+  {
+    "state": "GOA",
+    "total_enrolment": 2333.0,
+    "total_demographic_updates": 35079.0,
+    "total_biometric_updates": 68361,
+    "maintenance_load": 103440.0,
+    "maintenance_to_expansion_ratio": 44.318766066838045,
+    "cluster": 2
+  },
+  {
+    "state": "GUJARAT",
+    "total_enrolment": 272891.0,
+    "total_demographic_updates": 1772854.0,
+    "total_biometric_updates": 3078548,
+    "maintenance_load": 4851402.0,
+    "maintenance_to_expansion_ratio": 17.777736247306628,
+    "cluster": 0
+  },
+  {
+    "state": "HARYANA",
+    "total_enrolment": 98168.0,
+    "total_demographic_updates": 1165557.0,
+    "total_biometric_updates": 1633108,
+    "maintenance_load": 2798665.0,
+    "maintenance_to_expansion_ratio": 28.508643258054988,
+    "cluster": 3
+  },
+  {
+    "state": "HIMACHAL PRADESH",
+    "total_enrolment": 17007.0,
+    "total_demographic_updates": 145524.0,
+    "total_biometric_updates": 381620,
+    "maintenance_load": 527144.0,
+    "maintenance_to_expansion_ratio": 30.993885230479773,
+    "cluster": 3
+  },
+  {
+    "state": "JAMMU AND KASHMIR",
+    "total_enrolment": 47479.0,
+    "total_demographic_updates": 389979.0,
+    "total_biometric_updates": 761892,
+    "maintenance_load": 1151871.0,
+    "maintenance_to_expansion_ratio": 24.26013058129739,
+    "cluster": 3
+  },
+  {
+    "state": "JHARKHAND",
+    "total_enrolment": 155276.0,
+    "total_demographic_updates": 1384741.0,
+    "total_biometric_updates": 1997543,
+    "maintenance_load": 3382284.0,
+    "maintenance_to_expansion_ratio": 21.78226009003265,
+    "cluster": 0
+  },
+  {
+    "state": "KARNATAKA",
+    "total_enrolment": 221708.0,
+    "total_demographic_updates": 1686250.0,
+    "total_biometric_updates": 2613338,
+    "maintenance_load": 4299588.0,
+    "maintenance_to_expansion_ratio": 19.392933981029188,
+    "cluster": 0
+  },
+  {
+    "state": "KERALA",
+    "total_enrolment": 74856.0,
+    "total_demographic_updates": 743676.0,
+    "total_biometric_updates": 1606963,
+    "maintenance_load": 2350639.0,
+    "maintenance_to_expansion_ratio": 31.401725957492285,
+    "cluster": 3
+  },
+  {
+    "state": "LADAKH",
+    "total_enrolment": 1324.0,
+    "total_demographic_updates": 9080.0,
+    "total_biometric_updates": 11150,
+    "maintenance_load": 20230.0,
+    "maintenance_to_expansion_ratio": 15.267924528301887,
+    "cluster": 3
+  },
+  {
+    "state": "LAKSHADWEEP",
+    "total_enrolment": 203.0,
+    "total_demographic_updates": 1176.0,
+    "total_biometric_updates": 4820,
+    "maintenance_load": 5996.0,
+    "maintenance_to_expansion_ratio": 29.392156862745097,
+    "cluster": 3
+  },
+  {
+    "state": "MADHYA PRADESH",
+    "total_enrolment": 490573.0,
+    "total_demographic_updates": 2891709.0,
+    "total_biometric_updates": 5869778,
+    "maintenance_load": 8761487.0,
+    "maintenance_to_expansion_ratio": 17.859664393139465,
+    "cluster": 0
+  },
+  {
+    "state": "MAHARASHTRA",
+    "total_enrolment": 367568.0,
+    "total_demographic_updates": 5030307.0,
+    "total_biometric_updates": 9160628,
+    "maintenance_load": 14190935.0,
+    "maintenance_to_expansion_ratio": 38.60754035296774,
+    "cluster": 1
+  },
+  {
+    "state": "MANIPUR",
+    "total_enrolment": 13455.0,
+    "total_demographic_updates": 301521.0,
+    "total_biometric_updates": 282581,
+    "maintenance_load": 584102.0,
+    "maintenance_to_expansion_ratio": 43.4082936979786,
+    "cluster": 2
+  },
+  {
+    "state": "MEGHALAYA",
+    "total_enrolment": 109581.0,
+    "total_demographic_updates": 88419.0,
+    "total_biometric_updates": 88426,
+    "maintenance_load": 176845.0,
+    "maintenance_to_expansion_ratio": 1.6138143125695825,
+    "cluster": 3
+  },
+  {
+    "state": "MIZORAM",
+    "total_enrolment": 5505.0,
+    "total_demographic_updates": 39461.0,
+    "total_biometric_updates": 109622,
+    "maintenance_load": 149083.0,
+    "maintenance_to_expansion_ratio": 27.07646204140937,
+    "cluster": 3
+  },
+  {
+    "state": "NA",
+    "total_enrolment": 5775.0,
+    "total_demographic_updates": 56554.0,
+    "total_biometric_updates": 82143,
+    "maintenance_load": 138697.0,
+    "maintenance_to_expansion_ratio": 24.012638504155124,
+    "cluster": 3
+  },
+  {
+    "state": "NAGALAND",
+    "total_enrolment": 15270.0,
+    "total_demographic_updates": 36277.0,
+    "total_biometric_updates": 106566,
+    "maintenance_load": 142843.0,
+    "maintenance_to_expansion_ratio": 9.35387335472464,
+    "cluster": 3
+  },
+  {
+    "state": "ODISHA",
+    "total_enrolment": 122885.0,
+    "total_demographic_updates": 1110980.0,
+    "total_biometric_updates": 2462798,
+    "maintenance_load": 3573778.0,
+    "maintenance_to_expansion_ratio": 29.082059795257393,
+    "cluster": 3
+  },
+  {
+    "state": "PUDUCHERRY",
+    "total_enrolment": 2835.0,
+    "total_demographic_updates": 30482.0,
+    "total_biometric_updates": 64576,
+    "maintenance_load": 95058.0,
+    "maintenance_to_expansion_ratio": 33.51833568406206,
+    "cluster": 3
+  },
+  {
+    "state": "PUNJAB",
+    "total_enrolment": 75938.0,
+    "total_demographic_updates": 874634.0,
+    "total_biometric_updates": 1720437,
+    "maintenance_load": 2595071.0,
+    "maintenance_to_expansion_ratio": 34.17309946140981,
+    "cluster": 3
+  },
+  {
+    "state": "RAJASTHAN",
+    "total_enrolment": 345809.0,
+    "total_demographic_updates": 2791825.0,
+    "total_biometric_updates": 3962520,
+    "maintenance_load": 6754345.0,
+    "maintenance_to_expansion_ratio": 19.53195396315896,
+    "cluster": 0
+  },
+  {
+    "state": "SIKKIM",
+    "total_enrolment": 2184.0,
+    "total_demographic_updates": 20221.0,
+    "total_biometric_updates": 22701,
+    "maintenance_load": 42922.0,
+    "maintenance_to_expansion_ratio": 19.643935926773455,
+    "cluster": 3
+  },
+  {
+    "state": "TAMIL NADU",
+    "total_enrolment": 220085.0,
+    "total_demographic_updates": 2205844.0,
+    "total_biometric_updates": 4686033,
+    "maintenance_load": 6891877.0,
+    "maintenance_to_expansion_ratio": 31.314472524376836,
+    "cluster": 0
+  },
+  {
+    "state": "TELANGANA",
+    "total_enrolment": 148310.0,
+    "total_demographic_updates": 1867842.0,
+    "total_biometric_updates": 2159791,
+    "maintenance_load": 4027633.0,
+    "maintenance_to_expansion_ratio": 27.156670779645474,
+    "cluster": 0
+  },
+  {
+    "state": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+    "total_enrolment": 1948.0,
+    "total_demographic_updates": 12271.0,
+    "total_biometric_updates": 40539,
+    "maintenance_load": 52810.0,
+    "maintenance_to_expansion_ratio": 27.095946639302205,
+    "cluster": 3
+  },
+  {
+    "state": "TRIPURA",
+    "total_enrolment": 10953.0,
+    "total_demographic_updates": 130314.0,
+    "total_biometric_updates": 276122,
+    "maintenance_load": 406436.0,
+    "maintenance_to_expansion_ratio": 37.10388899032317,
+    "cluster": 3
+  },
+  {
+    "state": "UTTAR PRADESH",
+    "total_enrolment": 975040.0,
+    "total_demographic_updates": 8094286.0,
+    "total_biometric_updates": 9042132,
+    "maintenance_load": 17136418.0,
+    "maintenance_to_expansion_ratio": 17.575074278927758,
+    "cluster": 1
+  },
+  {
+    "state": "UTTARAKHAND",
+    "total_enrolment": 39578.0,
+    "total_demographic_updates": 480567.0,
+    "total_biometric_updates": 775720,
+    "maintenance_load": 1256287.0,
+    "maintenance_to_expansion_ratio": 31.741251673867456,
+    "cluster": 3
+  },
+  {
+    "state": "WEST BENGAL",
+    "total_enrolment": 366361.0,
+    "total_demographic_updates": 3780398.0,
+    "total_biometric_updates": 2465328,
+    "maintenance_load": 6245726.0,
+    "maintenance_to_expansion_ratio": 17.04796348966323,
+    "cluster": 0
+  }
+]
