@@ -186,6 +186,7 @@ poetry.toml
 pyrightconfig.json
 
 ### react ###
+*.DS_Store
 .DS_*
 logs
 **/*.backup.*
