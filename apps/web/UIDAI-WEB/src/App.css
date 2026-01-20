@@ -1,0 +1,485 @@
+:root {
+  --primary-gradient: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+  --secondary-gradient: linear-gradient(119.54deg, #d1913c 0%, #ffd194 100%);
+  --border: #d9d9d9;
+  --bg: #f6f7f9;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+/* Top Government Identity Bar */
+
+.top-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 6px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emblem {
+  height: 28px;
+}
+
+.govt-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.top-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lang {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.aadhaar-logo {
+  height: 32px;
+}
+
+/* Application Header */
+
+.app-header {
+  background: var(--primary-gradient);
+  color: #fff;
+  padding: 10px 24px;
+}
+
+.app-header .site-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-right img {
+  height: 40px;
+}
+
+/* Navigation */
+
+.nav {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 16px;
+}
+
+.nav button {
+  margin-right: 12px;
+  background: none;
+  border: none;
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.nav button.active {
+  border-bottom: 2px solid #000046;
+  font-weight: 600;
+}
+
+/* Filters */
+
+.filters {
+  background: #fff;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+}
+
+.filters select {
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+/* Content */
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Chart Containers */
+
+.chart-box {
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.chart-header {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  background: #fafafa;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.chart-body {
+  height: 300px; /* was 260 */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Footer */
+
+.footer {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.chart-box.large {
+  grid-column: span 2;
+}
+
+.recharts-text {
+  font-size: 11px;
+}
+
+/* KPI Cards */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.kpi-icon {
+  color: #000046;
+}
+
+.kpi-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.kpi-title {
+  font-size: 12px;
+  color: #333;
+}
+
+.kpi-subtitle {
+  font-size: 11px;
+  color: #666;
+}
+/* Chart Footer Toggle Controls */
+
+.chart-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 6px 0 10px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.chart-toggle {
+  background: none;
+  border: none;
+  color: #0b5ed7;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chart-toggle.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.chart-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Chart Footer */
+
+.chart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px 10px;
+  border-top: 1px solid var(--border);
+}
+
+.chart-toggles {
+  display: flex;
+  gap: 10px;
+}
+
+/* Icon buttons */
+
+.icon-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  padding: 2px;
+}
+
+.icon-toggle.active {
+  color: #000046;
+}
+
+.icon-toggle:hover {
+  color: #000046;
+}
+
+/* Bottom Sections */
+
+.bottom-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* Section Title */
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* FAQ */
+
+.faq-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  font-size: 12px;
+  color: #444;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Ask Form */
+
+.ask-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.ask-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-size: 13px;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+}
+
+.submit-btn {
+  align-self: flex-start;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px; /* subtle, govt-safe */
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Hover – very mild */
+.submit-btn:hover {
+  opacity: 0.95;
+}
+
+/* Focus – accessibility */
+.submit-btn:focus {
+  outline: 2px solid #1cb5e0;
+  outline-offset: 2px;
+}
+
+/* Modal Overlay */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Box */
+
+.modal {
+  background: #ffffff;
+  width: 700px;
+  max-width: 90%;
+  border: 1px solid var(--border);
+}
+
+/* Header */
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: #fafafa;
+}
+
+.modal-header h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Body */
+
+.modal-body {
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+/* Table */
+
+.sr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.sr-table th,
+.sr-table td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+}
+
+.sr-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.sr-table a {
+  color: #0b5ed7;
+  text-decoration: none;
+}
+
+.sr-table a:hover {
+  text-decoration: underline;
+}
+.utility-link {
+  background: none;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  color: #000;
+}
