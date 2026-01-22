@@ -2,7 +2,7 @@ import json
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-from config import DATA_PATHS, SCHEMA_VERSION
+from config import DATA_PATHS, BATCH_ID, SCHEMA_VERSION, OUTPUT_DIR
 
 from data.postal import build_pin_lookup
 from data.dataloader import (
@@ -12,6 +12,8 @@ from data.dataloader import (
 
 from features.builder import build_features
 from features.aggregations import build_state_stats
+
+from models.clustering import cluster_states
 
 from outputs.writer import save_state_stats
 
@@ -71,24 +73,19 @@ def run_pipeline():
     # --------------------------------------------------
     # Clustering (lifecycle segmentation)
     # --------------------------------------------------
-    X = state_stats[[
-        "total_enrolment",
-        "total_demographic_updates",
-        "total_biometric_updates",
-        "maintenance_to_expansion_ratio"
-    ]]
-
-    X_scaled = StandardScaler().fit_transform(X)
-
-    kmeans = KMeans(n_clusters=4, random_state=42)
-    state_stats["cluster"] = kmeans.fit_predict(X_scaled)
+    state_stats, cluster_summary = cluster_states(
+    state_stats,
+    n_clusters=4
+    )
 
     # --------------------------------------------------
     # Persist outputs
     # --------------------------------------------------
     output_path = save_state_stats(
         state_stats,
-        schema_version=SCHEMA_VERSION
+        batch_id=BATCH_ID,
+        schema_version=SCHEMA_VERSION,
+        output_dir = OUTPUT_DIR
     )
 
     return {

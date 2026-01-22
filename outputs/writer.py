@@ -1,15 +1,37 @@
 import json
-from datetime import datetime
 from pathlib import Path
 
 
-def save_state_stats(state_stats, schema_version="v1.0", output_dir="outputs"):
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
+def save_state_stats(
+    state_stats,
+    batch_id,
+    schema_version="v1.0",
+    output_dir="outputs"
+):
+    """
+    Saves the given state_stats to a JSON file.
 
-    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-    output_path = (
-        f"{output_dir}/state_stats_{schema_version}_{timestamp}.json"
-    )
+    Args:
+        state_stats (pandas.DataFrame): The state stats to be saved.
+        batch_id (str): The batch id to be used in the filename.
+        schema_version (str, optional): The schema version to be used in the filename. Defaults to "v1.0".
+        output_dir (str, optional): The directory where the output file will be saved. Defaults to "outputs".
+
+    Returns:
+        A dictionary containing the status of the operation and the path to the output file.
+    """
+    
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_path = output_dir / f"state_stats_{schema_version}_{batch_id}.json"
+
+    if output_path.exists():
+        return {
+            "status": "skipped",
+            "reason": "output_already_exists",
+            "path": str(output_path)
+        }
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(
@@ -18,4 +40,7 @@ def save_state_stats(state_stats, schema_version="v1.0", output_dir="outputs"):
             indent=2
         )
 
-    return output_path
+    return {
+        "status": "written",
+        "path": str(output_path)
+    }
