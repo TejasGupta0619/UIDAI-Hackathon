@@ -248,7 +248,7 @@ $RECYCLE.BIN/
 
 #Project files
 
-sample_datasets/api_data_aadhar_biometric/
-sample_datasets/api_data_aadhar_demographic/
-sample_datasets/api_data_aadhar_enrolment/
+sample_datasets/api_data_aadhar_biometric_01012026/
+sample_datasets/api_data_aadhar_demographic_01012026/
+sample_datasets/api_data_aadhar_enrolment_01012026/
 sample_datasets/postal_code_data/
